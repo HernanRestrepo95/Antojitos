@@ -1,0 +1,31 @@
+<div class="main-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <app-client></app-client>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <app-cart></app-cart>
+        <div class="row">
+          <div class="col-8">
+            <div class="sort-filters-wrapper">
+              <app-sort-filters [filters]='sortFilters' (sortChange)='sortProducts($event)'></app-sort-filters>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <app-showcase [products]='products'></app-showcase>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

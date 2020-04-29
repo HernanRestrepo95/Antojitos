@@ -1,0 +1,40 @@
+
+<form class="client-form">
+  <div class="row col-sm-12">
+    <div class="col-sm-6">
+      <output type="text" class="form-control" name="IdCliente" id="IdCliente" required ng-trim="false" hidden>{{client.IdCliente}}</output>
+      <label>Identificacion:
+        <input (keyup.enter)="getClientById($event.target.value)" (focusout)="getClientById($event.target.value)" value="{{client.Identificacion}}" type="text" class="form-control" name="Identificacion" id="Identificacion" required ng-trim="false">
+      </label>
+    </div>
+    <div class="col-sm-6">
+      <label>Nombres:
+        <output type="text" class="form-control" required ng-trim="false">{{client.Nombres}}</output>
+      </label>
+    </div>
+    <div class="col-sm-6">
+      <label>Apellidos:
+        <output type="text" class="form-control" required ng-trim="false">{{client.Apellidos}}</output>
+      </label>
+    </div>
+
+    <div class="col-sm-6">
+      <label>Direccion:
+        <output type="text" class="form-control" required ng-trim="false">{{client.Direccion}}</output>
+      </label>
+    </div>
+
+    <div class="col-sm-6">
+      <label>Telefono:
+        <output type="text" class="form-control" required ng-trim="false">{{client.Telefono}}</output>
+      </label>
+    </div>
+
+    <div class="col-sm-6">
+      <label>Email:
+        <output type="text" class="form-control" required ng-trim="false">{{client.Email}}</output>
+      </label>
+    </div>
+  </div>
+</form>
+

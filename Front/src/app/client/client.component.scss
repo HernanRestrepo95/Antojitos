@@ -1,0 +1,21 @@
+@import "../shared/colors";
+@import "../shared/mixins";
+
+.row .client{
+  margin-bottom: 2rem;
+}
+
+.client-full-width {
+  width: 100%;
+}
+
+.client-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.price{
+  -webkit-transition-delay: 0.8;
+    transition-delay: 0.5s;
+}
